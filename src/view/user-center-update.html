@@ -1,0 +1,39 @@
+<!--
+ * @Author: 张培培
+ * @Github: https: //github.com/ZiMingDaYou
+ * @LastEditors: 张培培
+ * @Date: 2019-03-04 23:08:04
+ * @LastEditTime: 2019-03-04 23:11:10
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title> ZiMingMall电商平台</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">ZiMingMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <%= require('html-loader!./layout/nav-side.html')  %>
+            <div class="content with-nav">
+                <div class="panel">
+                    <div class="panel-title">个人中心</div>
+                    <div class="panel-body">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>
