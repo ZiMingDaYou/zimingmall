@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  zimingmall:
+    image: zimingmall
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 80:80
